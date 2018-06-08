@@ -1,0 +1,38 @@
+[parity]
+mode="active"
+chain = "foundation"
+base_path = "./data"
+db_path = "./data/chains"
+keys_path = "./data/keys"
+identity = "1"
+light = false
+no_persistent_txqueue = true
+
+[rpc]
+disable = false
+port = 39842
+interface = "local"
+cors = ["*"]
+apis = ["all"]
+hosts = ["all"]
+server_threads = 10
+
+[websockets]
+disable = false
+port = 39843
+interface = "local"
+origins = ["all"]
+apis = ["all"]
+hosts = ["all"]
+
+[ui]
+force = false
+disable = false
+port = 39844
+interface = "all"
+path = "./data/signer"
+
+[network]
+port = 30303
+min_peers = 10
+max_peers = 100
